@@ -24,6 +24,27 @@ import java.util.Scanner;
 
 }
 
+	else if(userOption == 2) {
+
+	ovulationDates();
+}
+	else if(userOption == 3) {
+
+	flowDate();
+
+}
+	else if(userOption == 4) {
+
+            System.out.println("GOODBYE");
+
+           
+
+}
+	else {
+
+            System.out.println("Invalid option .");
+
+        }
 
 	
 }
@@ -46,4 +67,51 @@ import java.util.Scanner;
 	System.out.println("You're free to have unprotected sex");
 }
 }
+
+
+	public static void ovulationDates() {
+
+	Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first date of your last period : ");
+
+        int startDate = input.nextInt();
+
+        int ovulationStart = startDate + 11; 
+
+        int ovulationEnd = startDate + 16;
+
+        System.out.println("Your ovulation window is likely between day " + ovulationStart + " and day " + ovulationEnd + " of your cycle.");
+
+        System.out.println("Avoid unprotected sex this period.");
+
+}
+
+
+
+	public static void flowDate() {
+
+	Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the length of your cycle e.g. 28days: ");
+
+        int cycleLength = input.nextInt();
+
+        System.out.print("Enter the first day of your last period in numbers: ");
+
+        int lastPeriodStart = input.nextInt();
+
+        int nextFlowStart = lastPeriodStart + cycleLength;
+
+        if (nextFlowStart > 31) {
+
+	nextFlowStart = nextFlowStart % 31; 
+}
+
+        System.out.println("Your next monthly flow date is  around day " + nextFlowStart + " of the month.");
+
+}
+
+
+
 }
