@@ -30,7 +30,18 @@ import java.util.Scanner;
 	System.out.println("======================================================================================");
 
 
-	System.out.println("           ITEM	QYT	PRICE	  TOTAL(NGN)");
+	System.out.println("		ITEM	QYT	PRICE	TOTAL(NGN)");
+	
+
+	System.out.println("--------------------------------------------------------------------------------------");
+	     
+	System.out.println(		goods	+	theQuantity	+	firstPrice	+	secondPrice	\n		goods	+	theQuantity	+	firstPrice	+	secondPrice);
+	
+	System.out.println("--------------------------------------------------------------------------------------");
+
+	System.out.println("		Sub Total:	5300.00\n		Discount:	424.00\n	VAT @ 17.50%:	927.50
+
+	System.out.println("======================================================================================");
 
 }
 
